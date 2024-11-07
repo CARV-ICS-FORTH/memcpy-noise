@@ -29,6 +29,6 @@ It will spawn 11 threads that memcpy 1MB (1 << 20) and sleep for 1ms between eac
 
 ## Example
 
-There is a bash script (noise-stream.sh) the example directory, that runs the stream benchmark with various configuration arguments.
-In order to run it, we need to invke the script from the directory that has the noise and stream binaries.
+There is a bash script (noise-stream.sh) in the example directory, that runs the stream benchmark with various configuration arguments.
+In order to run it, we need to already have the noise tool and the stream benchmark compiled and invoke the script from the directory that has the noise and stream (stream_c.exe) binaries.
 We also provide the output of the script (noise-stream.log), when ran on a dual socket Intel(R) Xeon(R) CPU Max 9468 computer.
