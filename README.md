@@ -1,4 +1,4 @@
-#RUNNING BENCHMARKS WITH BACKGROUND memcpy()
+# RUNNING BENCHMARKS WITH BACKGROUND memcpy()
 
 This tool, runs a user provided benchmark, while having a number of threads performing memcpy in the background.
 
@@ -20,7 +20,7 @@ You can get details about the options by running:
 
 ./noise -h
 
-For example, if the hpcg benchmark resides in the same directory as the nois tool, the command bellow:
+For example, if the hpcg benchmark resides in the same directory as the noise tool, the command bellow:
 
 ./noise -s 20 -c 0 -m 0 -M 8 -T 11 -t 1000000 ./xhpcg
 
