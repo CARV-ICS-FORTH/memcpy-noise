@@ -26,3 +26,9 @@ For example, if the hpcg benchmark resides in the same directory as the noise to
 
 will use numa node 0 for the cpu of both the benchmark and the memcpy and the memory of the banchmark, while it will use node 8 for the memory of the memcpy.
 It will spawn 11 threads that memcpy 1MB (1 << 20) and sleep for 1ms between each memcpy. Each threads allocates a total of 2MB.
+
+## Example
+
+There is a bash script (noise-stream.sh) the example directory, that runs the stream benchmark with various configuration arguments.
+In order to run it, we need to invke the script from the directory that has the noise and stream binaries.
+We also provide the output of the script (noise-stream.log), when ran on a dual socket Intel(R) Xeon(R) CPU Max 9468 computer.
