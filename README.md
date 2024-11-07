@@ -16,15 +16,9 @@ In order to run a benchmark with the tool, you have to run the following:
 
 ./noise [options] benchmark [benchmark arguments]
 
-options:
--c <nodes> : the cpu numa nodes where the benchmark will be run, siminlar to numactl -c (defult current behaviour)
--C <nodes> : the cpu numa nodes where the noise will be run (defult same as -c)
--m <nodes> : the memory numa nodes where the benchmark will be run (defult current behaviour)
--M <nodes> : the memory numa nodes where the noise will be run (defult same as -m)
--t <nsecs> : the interval between each noise memcpy (default 0)
--T <threads> : the number of noise threads (default 0)
--s <shift> : noise chunk size will be 1 << shift (default 12 => 4KB)
--n <shift> : noise chunks number will be 1 << shift (default 1 => 2 chunks)
+You can get details about the options by running:
+
+./noise -h
 
 For example, if the hpcg benchmark resides in the same directory as the nois tool, the command bellow:
 
